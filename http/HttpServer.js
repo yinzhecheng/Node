@@ -64,7 +64,7 @@ module.exports = (function(){
             }
 
             //获取资源文件的相对路径
-            var filePath = path.join("http/webroot",pathName);
+            var filePath = path.join("http/webroot/demo2",pathName);
 
             //获取对应文件的文档类型
             var contentType = this.getContentType(filePath);
