@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			function sum(flag=true){
+				if(flag){
+					return true
+				}else{
+					return false
+				}
+			}
+			console.log(sum());
+			var arr=[3,6,9];
+			var arr1=arr.map((item)=>item+2)
+			console.log(arr1);
+			function add({x,y}){
+				console.log(x);
+				console.log(y);
+				return x+y;
+			}
+			console.log(add({y:10,x:12}));
+//			let add2=(...m)=>item+1;
+			let add2=(...m)=>{
+				let total=0;
+				for(var i of m){
+					total+=i;
+				}
+				console.log(`total is : ${total}`)
+			};
+			add2(1,2,3,4);
+			
+			var [n,m]=[4,8];
+			console.log(...[m,n]);
+			let arr3=[1,3];
+			let arr4=[2,4];
+			console.log([...arr3,...arr4]);
+		</script>
+	</body>
+</html>
